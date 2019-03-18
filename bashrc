@@ -12,10 +12,6 @@ if [ -f /etc/bashrc ]; then
 fi
 
 JAVA_HOME=/usr/java/jdk1.8.0_121
-SPARK_HOME=/spark24
-
-
-PATH=$PATH:$JAVA_HOME/bin:$SPARK_HOME/bin:$SPARK_HOME/sbin
+PATH=$JAVA_HOME/bin:$PATH
 export PATH
 
-source <(kubectl completion bash)
